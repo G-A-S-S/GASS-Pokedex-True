@@ -1,0 +1,91 @@
+body {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  background-image: url(pokemonforest.jpg);
+}
+
+.container {
+  border: 2px solid #821d1d;
+  padding: 2px;
+  background-color: #c52b26;
+  height: 600px;
+  width: 400px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.stupiduselesscircle {
+  height: 35px;
+  width: 35px;
+  border: 3px solid white;
+  border-radius: 50%;
+  background-color: #56abe1;
+  animation: pulse 5s ease-in-out infinite;
+  box-shadow: 0 0 0 0 rgba(0, 0, 255, 0.7);
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 #56abe1;
+  }
+  50% {
+    box-shadow: 0 0 0 20px rgba(0, 0, 255, 0); 
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(0, 0, 255, 0); 
+  }
+}
+
+.screen {
+  border: 8px solid #f5f1f1c2;
+  background-color: #56abe1;
+  width: 348px;
+  height: 500px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  bottom: 20;
+}
+
+.hud {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.searchbar{
+  background-color: white;
+  padding: 8px 12px; 
+  border-radius: 20px; 
+  border: 1px solid #ccc; 
+  outline: none;
+}
+
+.searchbutton{
+  background-color: #f3f3f3;
+  color: rgb(0, 0, 0);
+  border: 0px;
+  padding: 3px 10px 3px 10px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.stats-grid {
+  margin-top: 20px; /* Add margin for separation */
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Create a 3-column grid */
+  gap: 10px; /* Add gap between grid items */
+}
+
+.stat {
+  text-align: center;
+}
