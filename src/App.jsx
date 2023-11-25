@@ -44,7 +44,7 @@ const App = () => {
                 placeholder="Enter Pokémon name or ID"
                 value={searchTerm}
                 onChange={(e) => setSearchTerm(e.target.value)}
-                onKeyPress={(e) => { if (e.key === 'Enter') {handleSearch();}}}
+                onKeyPress={(e) => { if (e.key === 'Enter') {handleSearch();}}} //press enter instead of the search button ;)
               />
 
               <button className='searchbutton' onClick={handleSearch}>Search</button>
@@ -67,8 +67,7 @@ const App = () => {
 
                     {pokemonData.stats.map((stat, index) => (
 
-                      <li
-                        key={index}>
+                      <li  key={index}>
                         {stat.stat.name}: {stat.base_stat}
                       </li>
 

@@ -21,7 +21,7 @@ body {
 .stupiduselesscircle {
   height: 35px;
   width: 35px;
-  border: 3px solid white;
+  border: 3px solid #f5f1f1c2;
   border-radius: 50%;
   background-color: #56abe1;
   animation: pulse 5s ease-in-out infinite;
@@ -74,18 +74,4 @@ body {
   padding: 3px 10px 3px 10px;
   border-radius: 15px;
   cursor: pointer;
-}
-
-.stats-grid {
-  margin-top: 20px; /* Add margin for separation */
-}
-
-.grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); /* Create a 3-column grid */
-  gap: 10px; /* Add gap between grid items */
-}
-
-.stat {
-  text-align: center;
 }
